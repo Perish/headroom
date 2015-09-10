@@ -1,28 +1,52 @@
 # Headroom
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/headroom`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+[headroom.js](http://wicky.nillia.ms/headroom.js/) 和 [animate.css](http://daneden.github.io/animate.css/) 
 
 ## Installation
 
-Add this line to your application's Gemfile:
+添加下面代码到 Gemfile:
 
 ```ruby
 gem 'headroom'
 ```
 
-And then execute:
+执行:
 
     $ bundle
 
-Or install it yourself as:
+或者是执行:
 
     $ gem install headroom
 
 ## Usage
 
-TODO: Write usage instructions here
+在application.js中引用:
+
+```
+//= require headroom
+```
+
+在application.css中引用:
+
+```
+//= require animate
+```
+
+或者
+
+在application.coffee中引用:
+
+```
+#=require animate
+```
+
+在application.scss中引用:
+
+```
+#=require headroom
+```
+
+
 
 ## Development
 
