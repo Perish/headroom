@@ -48,8 +48,7 @@ gem 'headroom'
 
 headroom.js配置和初始化:
 
-```
-<script type="text/javascript">
+```javascript
 	$(function(){
 		var elem = document.querySelector("header");
 		var headroom = new Headroom(elem, {
@@ -63,7 +62,6 @@ headroom.js配置和初始化:
 		});
 		headroom.init();
 	})
-</script>
 ```
 [官网例子](http://wicky.nillia.ms/headroom.js/playroom/) 
 
