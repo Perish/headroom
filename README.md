@@ -23,7 +23,7 @@ gem 'headroom'
 在application.js中引用:
 
 ```
-//= require headroom
+//= require headroom #这里的headroom可以根据自己的情况选择 angular.headroom 、 angular.headroom.min 、headroom.min 、 jQuery.headroom 、jQuery.headroom.min
 ```
 
 在application.css中引用:
@@ -37,22 +37,37 @@ gem 'headroom'
 在application.coffee中引用:
 
 ```
-#=require animate
+#=require headroom #这里的headroom可以根据自己的情况选择 angular.headroom 、 angular.headroom.min 、headroom.min 、 jQuery.headroom 、jQuery.headroom.min
 ```
 
 在application.scss中引用:
 
 ```
-#=require headroom
+#=require animate
 ```
 
+headroom.js配置和初始化:
 
+```
+<script type="text/javascript">
+	$(function(){
+		var elem = document.querySelector("header");
+		var headroom = new Headroom(elem, {
+		  "offset": 202,
+		  "tolerance": 3,
+		  "classes": {
+		    "initial": "animated",
+		    "pinned": "zoomIn",
+		    "unpinned": "zoomOut"
+		  }
+		});
+		headroom.init();
+	})
+</script>
+```
+[官网例子](http://wicky.nillia.ms/headroom.js/playroom/) 
 
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release` to create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+[animate.css的使用方法](https://github.com/daneden/animate.css#usage)
 
 ## Contributing
 
