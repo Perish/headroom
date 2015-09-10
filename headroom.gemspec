@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Perish"]
   spec.email         = ["golovesx@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{headroom.js and animate.css packaged for the Rails assest pipeline}
+  spec.description   = %q{headroom.js is a lightweight, high-performance JS widget (with no dependencies!) that allows you to react to the user's scroll. animate.css is a bunch of cool, fun, and cross-browser animations for you to use in your projects.  }
+  spec.homepage      = "https://github.com/Perish/headroom.git"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
