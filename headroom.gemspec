@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["golovesx@gmail.com"]
 
   spec.summary       = %q{headroom.js and animate.css packaged for the Rails assest pipeline}
-  spec.description   = %q{headroom.js is a lightweight, high-performance JS widget (with no dependencies!) that allows you to react to the user's scroll. animate.css is a bunch of cool, fun, and cross-browser animations for you to use in your projects.  }
+  spec.description   = %q{Combine headroom.js and animate.css, let your web header have cross-browser animations.}
   spec.homepage      = "https://github.com/Perish/headroom.git"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
